@@ -1,7 +1,10 @@
 import React from "react";
 import "./Home.css";
 import SearchFlight from "./SearchFlight";
-
+import { Link } from "react-router-dom";
+import Flights from "../Components/images/Flights.png";
+import Search from "../Components/images/Search.png";
+import Login from "../Components/images/Login.png";
 function Home() {
   return (
     <div>
@@ -11,11 +14,25 @@ function Home() {
         </div>
 
         <nav>
+          <Link to="/AvailableFlights">
+            <img src={Flights} style={{ width: "25px", marginRight: "5px" }} />
+            Flights
+          </Link>
+          <Link to="/SearchFlight">
+            <img src={Search} style={{ width: "25px", marginRight: "5px" }} />
+            SearchFlight
+          </Link>
+          <Link to="/login">
+            <img src={Login} style={{ width: "25px", marginRight: "5px" }} />
+            Login
+          </Link>
+        </nav>
+        {/* <nav>
           <a href="AvailableFlights">Flights</a>
           <a href="Book">Book</a>
           <a href="SearchFlight">Search</a>
           <a href="login">Sign In</a>
-        </nav>
+        </nav> */}
       </header>
 
       <div class="hero">
