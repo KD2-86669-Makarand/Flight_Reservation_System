@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import AdminNavbar from "../Components/AdminNavbar";
-import passenger from "../Components/images/passenger.png";
-import { Link } from "react-router-dom";
 
 const PassengerList = () => {
   const [passengers, setPassengers] = useState([]);
@@ -25,15 +23,6 @@ const PassengerList = () => {
   return (
     <div className="container mx-auto p-4">
       <header>
-        <div class="logo">
-          <Link to="/UserList">
-            <img
-              src={passenger}
-              style={{ width: "25px", marginRight: "5px" }}
-            />
-            Users
-          </Link>
-        </div>
         <AdminNavbar />
       </header>
       <h2 className="text-center mb-4">Passenger List</h2>

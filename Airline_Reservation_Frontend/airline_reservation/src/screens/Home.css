@@ -30,8 +30,6 @@ header a:last-child {
 }
 
 .hero {
-    /* background-image: url('D:\AIRLINE_RESERVATION_SYSTEM\Airline_Reservation_System\Airline_Reservation_System\airline_reservation\public');  kartik */
-
     background-image: url('D:\Flihgt_Reservation_System\Flight_Reservation_System\Airline_Reservation_Frontend\airline_reservation\public\background4.jpg');
     background-position: center;
     background-size: cover;

@@ -6,34 +6,58 @@ import Flights from "../Components/images/Flights.png";
 import Booking from "../Components/images/Booking.png";
 import Search from "../Components/images/Search.png";
 import Logout from "../Components/images/Logout.png";
+import Logo from "../Components/images/MB.png";
 function Home() {
   return (
     <div>
-      <header>
-        <div>
-          <img
-            src="D:\Flihgt_Reservation_System\Flight_Reservation_System\Airline_Reservation_Frontend\airline_reservation\src\Components\images\planee.png"
-            alt="Your Logo"
-          />
-        </div>
-        <nav>
+      <header
+        style={{
+          display: "flex",
+          alignItems: "center",
+          height: "100px",
+          backgroundColor: "white",
+          padding: "0 10px",
+        }}
+      >
+        <img
+          src={Logo}
+          style={{ height: "100%", marginRight: "10px" }} // Height same as header
+          alt="Logo"
+        />
+        <nav style={{ display: "flex", alignItems: "center", gap: "15px" }}>
           <Link to="/AvailableFlights">
-            <img src={Flights} style={{ width: "25px", marginRight: "5px" }} />
+            <img
+              src={Flights}
+              style={{ width: "25px", marginRight: "5px" }}
+              alt="Flights"
+            />
             Flights
           </Link>
 
-          <Link>
-            <img src={Booking} style={{ width: "25px", marginRight: "5px" }} />
+          <Link to="/Booking">
+            <img
+              src={Booking}
+              style={{ width: "25px", marginRight: "5px" }}
+              alt="Booking"
+            />
             Booking
           </Link>
 
           <Link to="/SearchFlight">
-            <img src={Search} style={{ width: "25px", marginRight: "5px" }} />
+            <img
+              src={Search}
+              style={{ width: "25px", marginRight: "5px" }}
+              alt="Search"
+            />
             Search
           </Link>
 
           <Link to="/">
-            <img src={Logout} style={{ width: "25px", marginRight: "5px" }} />
+            <img
+              src={Logout}
+              style={{ width: "25px", marginRight: "5px" }}
+              alt="Logout"
+            />
             Logout
           </Link>
         </nav>

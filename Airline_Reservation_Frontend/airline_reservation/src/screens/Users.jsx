@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Users.css";
 import AdminNavbar from "../Components/AdminNavbar";
-import { Link } from "react-router-dom";
-import passenger from "../Components/images/passenger.png";
 
 const UserList = () => {
   const [users, setUsers] = useState([]);
@@ -98,15 +96,6 @@ const UserList = () => {
   return (
     <div className="container">
       <header>
-        <div class="logo">
-          <Link to="/UserList">
-            <img
-              src={passenger}
-              style={{ width: "25px", marginRight: "5px" }}
-            />
-            Users
-          </Link>
-        </div>
         <AdminNavbar />
       </header>
       <h2>User List</h2>

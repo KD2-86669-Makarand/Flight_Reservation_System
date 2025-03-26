@@ -21,7 +21,6 @@ const AddAirport = () => {
     setLoading(true);
     axios
       .get("http://localhost:8080/flight/getAllAirport")
-      // .get("http://192.168.1.17:3000/flight/getAllAirports")
       .then((response) => {
         setAirports(response.data);
         setLoading(false);
@@ -55,7 +54,6 @@ const AddAirport = () => {
 
     axios
       .post("http://localhost:8080/flight/addAirport", newAirport)
-      // .post("http://192.168.1.17:3000/flight/addAirport", newAirport)
       .then((response) => {
         setAirports([...airports, response.data]);
         setNewAirport({
@@ -92,7 +90,6 @@ const AddAirport = () => {
   const handleSave = (id) => {
     axios
       .put(`http://localhost:8080/flight/updateAirport/${id}`, editData[id])
-      // .put(`http://192.168.1.17:3000/flight/updateAirport/${id}`, editData[id])
       .then(() => {
         setAirports(
           airports.map((airport) =>
@@ -114,15 +111,6 @@ const AddAirport = () => {
   return (
     <div className="container mx-auto p-4">
       <header>
-        <div class="logo">
-          <Link to="/UserList">
-            <img
-              src={passenger}
-              style={{ width: "25px", marginRight: "5px" }}
-            />
-            Users
-          </Link>
-        </div>
         <AdminNavbar />
       </header>
       <h2>Airports</h2>

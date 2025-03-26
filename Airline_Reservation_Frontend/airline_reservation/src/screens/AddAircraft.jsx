@@ -98,15 +98,6 @@ const AddAircraft = () => {
   return (
     <div className="container mx-auto p-6">
       <header>
-        <div className="logo">
-          <Link to="/UserList">
-            <img
-              src={passenger}
-              style={{ width: "25px", marginRight: "5px" }}
-            />
-            Users
-          </Link>
-        </div>
         <AdminNavbar />
       </header>
       <h2>ADD AIRCRAFT</h2>

@@ -1,4 +1,4 @@
---  For ATR 72  74 seats
+--  For ATR 72(Flight ID : 23)  74 seats
 INSERT INTO seats (seat_number, class, seat_status, aircraft_id, flight_id, is_booked)
 VALUES
 ('A1', 'FIRST', 'AVAILABLE', 11, 4,0),
@@ -91,6 +91,102 @@ VALUES
 
 ('A13', 'ECONOMY', 'AVAILABLE', 11, 4,0),
 ('B13', 'ECONOMY', 'AVAILABLE', 11, 4,0);
+
+-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--  For ATR 72(Flight ID : 43)  74 seats
+INSERT INTO seats (seat_number, class, seat_status, aircraft_id, flight_id, is_booked)
+VALUES
+('A1', 'FIRST', 'AVAILABLE', 11, 43,0),
+('B1', 'FIRST', 'AVAILABLE', 11, 43,0),
+('C1', 'FIRST', 'AVAILABLE', 11, 43,0),
+('D1', 'FIRST', 'AVAILABLE', 11, 43,0),
+('E1', 'FIRST', 'AVAILABLE', 11, 43,0),
+('F1', 'FIRST', 'AVAILABLE', 11, 43,0),
+
+('A2', 'FIRST', 'AVAILABLE', 11, 43,0),
+('B2', 'FIRST', 'AVAILABLE', 11, 43,0),
+('C2', 'FIRST', 'AVAILABLE', 11, 43,0),
+('D2', 'FIRST', 'AVAILABLE', 11, 43,0),
+('E2', 'FIRST', 'AVAILABLE', 11, 43,0),
+('F2', 'FIRST', 'AVAILABLE', 11, 43,0);
+
+INSERT INTO seats (seat_number, class, seat_status, aircraft_id, flight_id, is_booked)
+VALUES
+('A3', 'BUSINESS', 'AVAILABLE', 11, 43,0),
+('B3', 'BUSINESS', 'AVAILABLE', 11, 43,0),
+('C3', 'BUSINESS', 'AVAILABLE', 11, 43,0),
+('D3', 'BUSINESS', 'AVAILABLE', 11, 43,0),
+('E3', 'BUSINESS', 'AVAILABLE', 11, 43,0),
+('F3', 'BUSINESS', 'AVAILABLE', 11, 43,0),
+
+('A4', 'BUSINESS', 'AVAILABLE', 11, 43,0),
+('B4', 'BUSINESS', 'AVAILABLE', 11, 43,0),
+('C4', 'BUSINESS', 'AVAILABLE', 11, 43,0),
+('D4', 'BUSINESS', 'AVAILABLE', 11, 43,0),
+('E4', 'BUSINESS', 'AVAILABLE', 11, 43,0),
+('F4', 'BUSINESS', 'AVAILABLE', 11, 43,0);
+
+INSERT INTO seats (seat_number, class, seat_status, aircraft_id, flight_id, is_booked)
+VALUES
+('A5', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('B5', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('C5', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('D5', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('E5', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('F5', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+
+('A6', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('B6', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('C6', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('D6', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('E6', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('F6', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+
+('A7', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('B7', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('C7', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('D7', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('E7', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('F7', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+
+('A8', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('B8', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('C8', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('D8', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('E8', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('F8', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+
+('A9', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('B9', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('C9', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('D9', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('E9', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('F9', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+
+('A10', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('B10', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('C10', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('D10', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('E10', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('F10', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+
+('A11', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('B11', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('C11', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('D11', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('E11', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('F11', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+
+('A12', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('B12', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('C12', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('D12', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('E12', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('F12', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+
+('A13', 'ECONOMY', 'AVAILABLE', 11, 43,0),
+('B13', 'ECONOMY', 'AVAILABLE', 11, 43,0);
 
 
 -- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

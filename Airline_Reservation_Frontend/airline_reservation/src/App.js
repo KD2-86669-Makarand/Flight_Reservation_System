@@ -16,6 +16,7 @@ import Passengers from "./screens/Passengers";
 // import FlightSeatLayout from "./screens/SeatLayout";
 import BookingSeats from "./screens/BookSeat";
 import PaymentForm from "./screens/Payment";
+import BookedSeatsTable from "./screens/BookingsConfirmation";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         {/* <Route path="SeatLayout" element={<FlightSeatLayout />} /> */}
         <Route path="BookSeat" element={<BookingSeats />} />
         <Route path="Payment" element={<PaymentForm />} />
+        <Route path="BookingsConfirmation" element={<BookedSeatsTable />} />
       </Routes>
     </div>
   );

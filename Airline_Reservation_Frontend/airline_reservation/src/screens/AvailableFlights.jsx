@@ -55,9 +55,6 @@ const FlightResults = () => {
       })
     );
   };
-  const selectedFlight = JSON.parse(sessionStorage.getItem("selectedFlight"));
-  sessionStorage.setItem("flightId", selectedFlight.flightId); // Store flightId
-
   return (
     <div className="container mx-auto p-4">
       <div className="flight-results-container">

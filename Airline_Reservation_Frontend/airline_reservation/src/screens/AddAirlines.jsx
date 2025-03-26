@@ -19,7 +19,6 @@ const AddAirlines = () => {
   useEffect(() => {
     axios
       .get("http://localhost:8080/flight/getAllAirline")
-      // .get("http://192.168.1.17:3000/flight/getAllAirline")
       .then((response) => setAirlines(response.data))
       .catch((error) => console.error("Error fetching airlines!", error));
   }, []);
@@ -43,7 +42,6 @@ const AddAirlines = () => {
     }
     axios
       .post("http://localhost:8080/flight/addAirline", newAirline)
-      // .post("http://192.168.1.17:3000/flight/addAirline", newAirline)
       .then((response) => {
         setAirlines([...airlines, response.data]);
         setNewAirline({
@@ -75,7 +73,6 @@ const AddAirlines = () => {
   const handleSave = (id) => {
     axios
       .put(`http://localhost:8080/flight/updateAirline/${id}`, editData[id])
-      // .put(`http://192.168.1.17:3000/flight/updateAirline/${id}`, editData[id])
       .then(() => {
         setAirlines(
           airlines.map((airline) =>
@@ -97,10 +94,6 @@ const AddAirlines = () => {
       const response = await axios.put(
         `http://localhost:8080/flight/airline/${id}/deactivate`
       );
-      // const response = await axios.put(
-      //   `http://192.168.1.17:3000/flight/airline/${id}/deactivate`
-      // );
-
       if (response.status === 200) {
         // Update the airline status to INACTIVE in the frontend
         setAirlines((prevAirlines) =>
@@ -123,15 +116,6 @@ const AddAirlines = () => {
   return (
     <div className="container mx-auto p-4">
       <header>
-        <div class="logo">
-          <Link to="/UserList">
-            <img
-              src={passenger}
-              style={{ width: "25px", marginRight: "5px" }}
-            />
-            Users
-          </Link>
-        </div>
         <AdminNavbar />
       </header>
       <h2>ADD AIRLINE</h2>

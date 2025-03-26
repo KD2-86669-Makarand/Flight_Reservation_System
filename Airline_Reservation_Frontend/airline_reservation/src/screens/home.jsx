@@ -5,15 +5,33 @@ import { Link } from "react-router-dom";
 import Flights from "../Components/images/Flights.png";
 import Search from "../Components/images/Search.png";
 import Login from "../Components/images/Login.png";
+import Logo from "../Components/images/MB.png";
 function Home() {
   return (
     <div>
-      <header>
-        <div class="logo">
-          <a href="/">New Horizon</a>
-        </div>
+      <header
+        style={{
+          display: "flex",
+          alignItems: "center",
+          height: "100px",
+          backgroundColor: "white",
+          padding: "0 10px",
+        }}
+      >
+        <img
+          src={Logo}
+          style={{ height: "100%", marginRight: "10px" }} // Height same as header
+          alt="Logo"
+        />
 
-        <nav>
+        <nav
+          style={{
+            // height: "100%",
+            display: "flex",
+            alignItems: "center",
+            gap: "15px",
+          }}
+        >
           <Link to="/AvailableFlights">
             <img src={Flights} style={{ width: "25px", marginRight: "5px" }} />
             Flights
