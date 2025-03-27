@@ -39,21 +39,21 @@ function Register() {
         phone,
         country,
       };
-  
+
       try {
-        const response = await fetch("http://localhost:8080/users/register", {
+        const response = await fetch("http://localhost:8080/users/add", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(user),
         });
-  
+
         const result = await response.json();
-  
+
         if (response.ok) {
           toast.success("Successfully registered a new admin");
-          navigate("/login"); 
+          navigate("/login");
         } else {
           toast.error(result.message || "Registration failed");
         }
@@ -62,7 +62,7 @@ function Register() {
       }
     }
   };
-  
+
   return (
     <div
       className="card shadow-lg p-4 rounded"

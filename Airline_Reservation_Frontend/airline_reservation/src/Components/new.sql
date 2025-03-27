@@ -1,0 +1,111 @@
+--  For A320  180 seats
+
+
+INSERT INTO seats (seat_number, class, seat_status, aircraft_id, flight_id, is_booked)
+VALUES
+('A1', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('B1', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('C1', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('D1', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('E1', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('F1', 'FIRST', 'AVAILABLE', 14, 385, 0),
+
+('A2', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('B2', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('C2', 'FIRST', 'AVAILABLE', 14, 385, 0),
+
+('D2', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('E2', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('F2', 'FIRST', 'AVAILABLE', 14, 385, 0),
+
+('A3', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('B3', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('C3', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('D3', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('E3', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('F3', 'FIRST', 'AVAILABLE', 14, 385, 0),
+
+('A4', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('B4', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('C4', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('D4', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('E4', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('F4', 'FIRST', 'AVAILABLE', 14, 385, 0),
+
+('A5', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('B5', 'FIRST', 'AVAILABLE', 14, 385, 0),
+('C5', 'FIRST', 'AVAILABLE', 14, 385, 0);
+
+
+INSERT INTO seats (seat_number, class, seat_status, aircraft_id, flight_id, is_booked)
+VALUES
+('D5', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('E5', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('F5', 'BUSINESS', 'AVAILABLE', 14, 385, 0),
+
+('A6', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('B6', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('C6', 'BUSINESS', 'AVAILABLE', 14, 385, 0),
+('D6', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('E6', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('F6', 'BUSINESS', 'AVAILABLE', 14, 385, 0),
+
+('A7', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('B7', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('C7', 'BUSINESS', 'AVAILABLE', 14, 385, 0),
+('D7', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('E7', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('F7', 'BUSINESS', 'AVAILABLE', 14, 385, 0),
+
+('A8', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('B8', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('C8', 'BUSINESS', 'AVAILABLE', 14, 385, 0),
+('D8', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('E8', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('F8', 'BUSINESS', 'AVAILABLE', 14, 385, 0),
+
+('A9', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('B9', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('C9', 'BUSINESS', 'AVAILABLE', 14, 385, 0),
+('D9', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('E9', 'BUSINESS', 'AVAILABLE', 14, 385, 0), 
+('F9', 'BUSINESS', 'AVAILABLE', 14, 385, 0);
+
+
+INSERT INTO seats (seat_number, class, seat_status, aircraft_id, flight_id, is_booked)
+VALUES
+('A10', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('B10', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('C10', 'ECONOMY', 'AVAILABLE', 14, 385, 0),
+('D10', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('E10', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('F10', 'ECONOMY', 'AVAILABLE', 14, 385, 0),
+
+('A11', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('B11', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('C11', 'ECONOMY', 'AVAILABLE', 14, 385, 0),
+('D11', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('E11', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('F11', 'ECONOMY', 'AVAILABLE', 14, 385, 0),
+
+('A12', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('B12', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('C12', 'ECONOMY', 'AVAILABLE', 14, 385, 0),
+('D12', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('E12', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('F12', 'ECONOMY', 'AVAILABLE', 14, 385, 0),
+
+('A13', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('B13', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('C13', 'ECONOMY', 'AVAILABLE', 14, 385, 0),
+('D13', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('E13', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('F13', 'ECONOMY', 'AVAILABLE', 14, 385, 0),
+
+('A14', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('B14', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('C14', 'ECONOMY', 'AVAILABLE', 14, 385, 0),
+('D14', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('E14', 'ECONOMY', 'AVAILABLE', 14, 385, 0), 
+('F14', 'ECONOMY', 'AVAILABLE', 14, 385, 0);
+

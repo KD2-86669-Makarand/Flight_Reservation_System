@@ -17,6 +17,7 @@ import Passengers from "./screens/Passengers";
 import BookingSeats from "./screens/BookSeat";
 import PaymentForm from "./screens/Payment";
 import BookedSeatsTable from "./screens/BookingsConfirmation";
+import Ticket from "./screens/Ticket";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="BookSeat" element={<BookingSeats />} />
         <Route path="Payment" element={<PaymentForm />} />
         <Route path="BookingsConfirmation" element={<BookedSeatsTable />} />
+        <Route path="Ticket" element={<Ticket />} />
       </Routes>
     </div>
   );
