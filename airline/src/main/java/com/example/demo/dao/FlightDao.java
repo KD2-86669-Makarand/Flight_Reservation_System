@@ -19,4 +19,6 @@ public interface FlightDao extends JpaRepository<Flight, Long>
 	    @Param("sourceId") Long sourceId, 
 	    @Param("destinationId") Long destinationId, 
 	    @Param("departureDate") LocalDate departureDate);
+	
+	Flight findByFlightId(Long flightId);
 }

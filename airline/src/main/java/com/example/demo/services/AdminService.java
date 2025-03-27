@@ -1,7 +1,10 @@
 package com.example.demo.services;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
+
+import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.dto.AddAircraftDTO;
 import com.example.demo.dto.AircraftDTO;
@@ -16,6 +19,7 @@ import com.example.demo.dto.UserRespDTO;
 import com.example.demo.entity.Aircraft;
 import com.example.demo.entity.Airlines;
 import com.example.demo.entity.Airport;
+import com.example.demo.entity.Flight;
 
 public interface AdminService {
 	ApiResponse addFlight(FlightDTO flight);
@@ -52,4 +56,10 @@ public interface AdminService {
 	List<PassengerDTO> getAllPassengers();
 	
 	ApiResponse updatePassengers(Long passengerId,PassengerDTO passengerDto);
+
+//	void uploadImage(Long aircraftId, MultipartFile file) throws IOException;
+//
+//	byte[] getAircraftImage(Long aircraftId);
+	
+	public Flight getFlightDetails(Long flightId);
 }

@@ -17,20 +17,24 @@ import lombok.Setter;
 @AllArgsConstructor
 public class PaymentDTO 
 {
-	private Long paymentId;
-
-	private float amount;
-	
-	private LocalDateTime paymentDate;
-
-	private PaymentMethod paymentMethod;
-
-	private PaymentStatus status;
-
-	private Long booking;
-	
-    private Long flightId;
+//	private Long paymentId;
+//
+//	private float amount;
+//	
+//	private LocalDateTime paymentDate;
+//
+//	private PaymentMethod paymentMethod;
+//
+//	private PaymentStatus status;
+//
+//	private Long booking;
+//	
+//    private Long flightId;
+//    
+//    private Long seatId;
+//    
     
-    private Long seatId;
-
+    private Long bookingId;
+    private float amount;
+    private PaymentMethod paymentMethod;
 }

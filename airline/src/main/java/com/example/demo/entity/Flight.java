@@ -30,14 +30,14 @@ public class Flight {
     @JoinColumn(name = "AircraftId", referencedColumnName = "AircraftId", nullable = false)
     private Aircraft aircraft;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "SourceId", referencedColumnName = "SourceId", nullable = false)
     private Source source;
     
     @Column(name = "departure_time")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm")
     private LocalDateTime departureTime;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "DestinationId", referencedColumnName = "DestinationId", nullable = false)
     private Destination destination;
     

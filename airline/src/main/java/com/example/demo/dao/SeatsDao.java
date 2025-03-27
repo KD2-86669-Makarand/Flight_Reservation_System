@@ -43,6 +43,8 @@ public interface SeatsDao extends JpaRepository<Seats, Long> {
     List<Seats> findAvailableSeatsByFlightId(@Param("flightId") Long flightId);
 
 
+    @Query("SELECT s FROM Seats s WHERE s.flight.flightId = :flightId AND s.status = 'BOOKED'")
+    List<Seats> findBookedSeatsByFlightId(@Param("flightId") Long flightId);
 
 	}
 

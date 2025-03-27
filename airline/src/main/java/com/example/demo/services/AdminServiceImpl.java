@@ -1,5 +1,6 @@
 package com.example.demo.services;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -19,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.dao.FlightDao;
 import com.example.demo.dao.PassengerDao;
@@ -274,6 +276,25 @@ public class AdminServiceImpl implements AdminService {
 	    return new ApiResponse("Added new Aircraft with ID = " + savedAircraft.getAircraftId());
 
 	}
+	
+//	// 📤 Upload Image to DB
+//	@Override
+//    public void uploadImage(Long aircraftId, MultipartFile file) throws IOException {
+//        Aircraft aircraft = aircraftDao.findById(aircraftId)
+//                .orElseThrow(() -> new RuntimeException("Aircraft not found"));
+//
+//        aircraft.setImage(file.getBytes());
+//        aircraftDao.save(aircraft);
+//    }
+//
+//    // 📥 Retrieve Image from DB
+//	@Override
+//    public byte[] getAircraftImage(Long aircraftId) {
+//        Aircraft aircraft = aircraftDao.findById(aircraftId)
+//                .orElseThrow(() -> new RuntimeException("Aircraft not found"));
+//
+//        return aircraft.getImage();
+//    }
 
 	@Override
 	public List<Airport> getAllAirports() {
@@ -380,6 +401,10 @@ public class AdminServiceImpl implements AdminService {
 		        .collect(Collectors.toList());
 	}
 
+	@Override
+	public Flight getFlightDetails(Long flightId) {
+        return flightDao.findByFlightId(flightId);
+    }
 
 
 	@Override

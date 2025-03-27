@@ -10,7 +10,8 @@ import org.springframework.context.annotation.Bean;
 import com.example.demo.services.PaymentService;
 import com.example.demo.services.PaymentServiceImpl;
 
-@SpringBootApplication
+//@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.example.demo")
 public class AirlineApplication {
 
 	public static void main(String[] args) {

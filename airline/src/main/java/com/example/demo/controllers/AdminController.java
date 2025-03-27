@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.dao.AircraftDao;
 import com.example.demo.dao.AirlineDao;
@@ -50,6 +52,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RequestMapping("/flight")
 @CrossOrigin(origins = "http://localhost:3000")
 //@CrossOrigin(origins = "http://192.168.1.17:3000")
+//@CrossOrigin(origins = "http://192.168.0.243:3000")
 public class AdminController {
 	@Autowired
 	private AdminService flightService;
@@ -97,6 +100,24 @@ public class AdminController {
 					.body(new ApiResponse(e.getMessage()));
 		}
 	}
+	
+//	// 🚀 API to Upload Image
+//    @PostMapping("/uploadImage/{aircraftId}")
+//    public ResponseEntity<String> uploadImage(@PathVariable Long aircraftId, @RequestParam("file") MultipartFile file) {
+//        try {
+//        	flightService.uploadImage(aircraftId, file);
+//            return ResponseEntity.ok("Image uploaded successfully for Aircraft ID: " + aircraftId);
+//        } catch (Exception e) {
+//            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Image upload failed!");
+//        }
+//    }
+//
+//    // 🚀 API to Get Image
+//    @GetMapping("/getImage/{aircraftId}")
+//    public ResponseEntity<byte[]> getImage(@PathVariable Long aircraftId) {
+//        byte[] imageData = flightService.getAircraftImage(aircraftId);
+//        return ResponseEntity.ok().contentType(MediaType.IMAGE_JPEG).body(imageData);
+//    }
 	
 	@PutMapping("/airline/{airlineId}/deactivate")
 	public ResponseEntity<ApiResponse> deactivateAirline(@PathVariable Long airlineId) {
@@ -249,6 +270,10 @@ public class AdminController {
 	    return ResponseEntity.ok(passengers);
 	}
 
-
+	@GetMapping("/{flightId}")
+    public Flight getFlight(@PathVariable Long flightId) {
+//        return flightService.getFlightDetails(flightId);
+		return flightService.getFlightDetails(flightId);
+    }
 
 }
